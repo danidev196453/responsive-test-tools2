@@ -11,10 +11,12 @@
 <body align="center">
   <div>
     <form onsubmit="getData(event)" method="GET">
-      <input type="url" id="query" placeholder="Enter the url you want to check" value="" required>
-      <button type="submit">
-        <i class="fa fa-search"></i>
-      </button>
+      <div class="search-container">
+        <input class="search-box" type="url" id="query" placeholder="Enter the URL you wan to check...">
+        <button class="search-button">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
       <select id="desktop" onchange="updateDesktop()">
         <option value="0_0">Desktop</option>
         <option value="1920_1200">1920x1200 (24" Desktop)</option>
