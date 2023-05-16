@@ -1,0 +1,36 @@
+body {
+  background-color: #121212;
+  color: white;
+}
+
+input {
+  background-color: #121212;
+  color: white;
+  border: 1px solid gray;
+  width: 280px;
+  padding: 10px;
+  margin-bottom: 7px;
+}
+
+button {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 0px;
+}
+
+select {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  margin: 4px;
+}
+
+.content {
+  /*__*/
+}
+
+iframe {
+  border: 1px solid gray;
+  color: white;
+}

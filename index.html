@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Browser Mini</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body align="center">
+  <div>
+    <form onsubmit="getData(event)" method="GET">
+      <input type="url" id="query" placeholder="Enter the url you want to check" value="https://daniapi.my.id" required>
+      <button type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+      <select id="desktop" onchange="updateDesktop()">
+        <option value="0_0">Desktop</option>
+        <option value="1920_1200">1920x1200 (24" Desktop)</option>
+        <option value="1920_1080">1920x1080 (23" Desktop)</option>
+        <option value="1680_1050">1680x1050 (22" Desktop)</option>
+        <option value="1600_900">1600x900 (20" Desktop)</option>
+        <option value="1440_900">1440_900 (19" Desktop)</option>
+        <option value="1024_800">1024x800 (15" Notebook)</option>
+        <option value="1920_1080">1920x1080 (13" Notebook)</option>
+        <option value="1024_600">1024x600 (10" Notebook)</option>
+      </select>
+      <select id="tablet" onchange="updateTablet()">
+        <option value="0_0">Tablet</option>
+        <option value="768_1024">768x1024 (Apple iPad Mini)</option>
+        <option value="768_1024">768x1024 (Apple iPad Retina)</option>
+        <option value="1366_1024">1366x1024 (Apple iPad Pro)</option>
+        <option value="768_1024">768x1024 (Amazon Kindle Fire)</option>
+        <option value="768_1024">768x1024 (Amazon Kindle Fire HD)</option>
+        <option value="768_1024">768x1024 (Asus Eee 1000)</option>
+        <option value="600_960">600x960 (Nexus 7)</option>
+        <option value="1024_768">1024x768 (Nexus 9)</option>
+        <option value="800_1280">768x1024 (Samsung Galaxy Tab 10)</option>
+      </select>
+      <select id="mobile" onchange="updateMobile()">
+        <option value="0_0">Mobile</option>
+        <option value="320_480">320x480 (Apple iPhone 3/4/4s)</option>
+        <option value="320_568">320x568 (Apple iPhone 5/5s)</option>
+        <option value="375_667">375x667 (Apple iPhone 6/6s/7)</option>
+        <option value="414_736">414x736 (Apple iPhone 6 Plus/7 Plus)</option>
+        <option value="320_568">320x568 (Apple iPhone 5/5s)</option>
+        <option value="320_568">320x568 (Apple iPhone 5/5s)</option>
+        <option value="320_568">320x568 (Apple iPhone 5/5s)</option>
+        <option value="360_640">360x640 (Samsung Galaxy S5/S6/S7)</option>
+      </select><br>
+      <select id="width" onchange="updateWidth()">
+        <option value="360">Width</option>
+        <option value="360">Default</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+        <option value="400">400</option>
+        <option value="500">500</option>
+        <option value="600">600</option>
+        <option value="700">700</option>
+        <option value="800">800</option>
+        <option value="900">900</option>
+        <option value="1000">1000</option>
+      </select>
+      <select id="height" onchange="updateHeight()">
+        <option value="800">Height</option>
+        <option value="800">Default</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+        <option value="400">400</option>
+        <option value="500">500</option>
+        <option value="600">600</option>
+        <option value="700">700</option>
+        <option value="800">800</option>
+        <option value="900">900</option>
+        <option value="1000">1000</option>
+      </select>
+    </form>
+    <div class="content">
+      <!-- Content -->
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
