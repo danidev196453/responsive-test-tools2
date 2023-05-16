@@ -3,15 +3,6 @@ body {
   color: white;
 }
 
-input {
-  background-color: #121212;
-  color: white;
-  border: 1px solid gray;
-  width: 280px;
-  padding: 10px;
-  margin-bottom: 7px;
-}
-
 .search-container {
   background-color: #121212;
   position: relative;
